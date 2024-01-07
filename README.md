@@ -24,6 +24,7 @@ jar {
 
 ### ch 03. 스프링 웹 개발 기초
 #### 정적 컨텐츠
+(껐다가 다시 실행하는건 저장의 개념인가?)
 #### MVC와 템플릿 엔진
 MVC: Model, View, Controller <br>
 localhost:8080/hello-mvc?name=spring!
