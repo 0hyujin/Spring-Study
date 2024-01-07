@@ -11,6 +11,6 @@ gradle 검색 <br>
 Run IntelliJ로 수정 <br>
 
 #### 라이브러리 살펴보기
-spring-boot-starter-web
-spring-boot-starter-thymeleaf
-spring-boot-starter
+spring-boot-starter-web<br>
+spring-boot-starter-thymeleaf<br>
+spring-boot-starter<br>
