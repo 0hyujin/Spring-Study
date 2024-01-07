@@ -14,3 +14,7 @@ Run IntelliJ로 수정 <br>
 spring-boot-starter-web<br>
 spring-boot-starter-thymeleaf<br>
 spring-boot-starter<br>
+
+#### 빌드하고 실행하기
+SNAPSHOT.jar는 실행가능한 아카이브이고, SNAPSHOT-plain.jar는 실행이 불가능한 일반 아카이브이다.
+스프링부트 2.5부터 빌드시 기본적으로 2가지 파일이 떨어지게 되었는데, 빌드시 plain.jar를 생성하지 않으려면 build.gradle에 아래 내용을 추가해주면 된다.
