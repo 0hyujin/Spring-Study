@@ -29,3 +29,8 @@ jar {
 MVC: Model, View, Controller <br>
 localhost:8080/hello-mvc?name=spring!
 #### API
+
+
+### ch 06. 스프링 DB 접근 기술
+#### JPA
+@GeneratedValue(strategy = GenerationType.SEQUENCE)
