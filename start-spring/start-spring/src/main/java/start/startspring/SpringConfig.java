@@ -1,12 +1,9 @@
-package hello.hellospring;
+package start.startspring;
 
-import hello.hellospring.repository.*;
-import hello.hellospring.service.MemberService;
+import start.startspring.repository.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-
-import javax.persistence.EntityManager;
-import javax.sql.DataSource;
+import start.startspring.service.MemberService;
 
 @Configuration
 public class SpringConfig {
