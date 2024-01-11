@@ -33,4 +33,7 @@ localhost:8080/hello-mvc?name=spring!
 
 ### ch 06. 스프링 DB 접근 기술
 #### JPA
+###### Member.java 수정
 @GeneratedValue(strategy = GenerationType.SEQUENCE)
+###### application.properties 수정
+spring.jpa.hibernate.ddl-auto=create
