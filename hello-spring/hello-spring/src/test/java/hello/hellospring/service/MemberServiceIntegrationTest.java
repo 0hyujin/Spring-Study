@@ -42,11 +42,13 @@ class MemberServiceIntegrationTest {
     @Test
     public void 중복회원예외(){
         // given
+        // 같은 회원이 되어야 예외가 발생하기 때문에
+        // setName()을 둘다 같은 이름으로 맞추기
         Member member1 = new Member();
-        member1.setName("spring1");
+        member1.setName("spring");
 
         Member member2 = new Member();
-        member2.setName("spring2");
+        member2.setName("spring");
 
         // when
         memberService.join(member1);
