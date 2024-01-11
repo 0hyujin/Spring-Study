@@ -1,4 +1,4 @@
-### hello-spring [스프링 입문]
+### start-spring [스프링 입문]
 
 #### 프로젝트 생성
 버전 수정 <br>
@@ -18,3 +18,6 @@ jar {
 @GeneratedValue(strategy = GenerationType.SEQUENCE) <br>
 - application.properties 수정 <br>
 spring.jpa.hibernate.ddl-auto=create <br>
+
+
+### core-spring [스프링 핵심 원리 - 기본편]
