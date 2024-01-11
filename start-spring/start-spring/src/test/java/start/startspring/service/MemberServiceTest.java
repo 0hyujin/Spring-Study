@@ -1,7 +1,7 @@
 package start.startspring.service;
 
-import hello.hellospring.domain.Member;
-import hello.hellospring.repository.MemoryMemberRepository;
+import start.startspring.domain.Member;
+import start.startspring.repository.MemoryMemberRepository;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

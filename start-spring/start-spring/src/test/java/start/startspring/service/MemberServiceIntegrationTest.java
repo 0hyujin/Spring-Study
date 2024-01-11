@@ -1,7 +1,7 @@
 package start.startspring.service;
 
-import hello.hellospring.domain.Member;
-import hello.hellospring.repository.MemberRepository;
+import start.startspring.domain.Member;
+import start.startspring.repository.MemberRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
