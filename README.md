@@ -4,7 +4,7 @@
 버전 수정 <br>
 [File] - [Settings] 이동 <br>
 gradle 검색 <br>
-Run IntelliJ로 수정 <br>
+Run IntelliJ로 수정 <br> 
 
 #### 빌드하고 실행하기
 SNAPSHOT.jar는 실행가능한 아카이브이고, SNAPSHOT-plain.jar는 실행이 불가능한 일반 아카이브이다.<br>
