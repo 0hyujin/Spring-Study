@@ -3,8 +3,9 @@ package core.basicspring.beanfind;
 import core.basicspring.discount.DiscountPolicy;
 import core.basicspring.discount.FixDiscountPolicy;
 import core.basicspring.discount.RateDiscountPolicy;
-import org.junit.Test;
+
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.NoUniqueBeanDefinitionException;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Bean;
