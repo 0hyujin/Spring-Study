@@ -3,9 +3,11 @@ package core.basicspring.common;
 import jakarta.annotation.PostConstruct;
 import jakarta.annotation.PreDestroy;
 import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
 
 import java.util.UUID;
 
+@Component
 @Scope(value  = "request")
 public class MyLogger {
 
