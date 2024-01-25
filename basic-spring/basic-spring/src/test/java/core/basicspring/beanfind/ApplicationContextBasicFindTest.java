@@ -18,7 +18,7 @@ public class ApplicationContextBasicFindTest {
 
     @Test
     @DisplayName("빈 이름으로 조회")
-    void findBeanByName() {
+    public void findBeanByName() {
         MemberService memberService = ac.getBean("memberService", MemberService.class);
         // 같은 인스턴스인지 검증
         assertThat(memberService).isInstanceOf(MemberServiceImpl.class);
@@ -27,7 +27,7 @@ public class ApplicationContextBasicFindTest {
 
     @Test
     @DisplayName("이름 없이 타입으로만 조회")
-    void findBeanByType() {
+    public void findBeanByType() {
         // 타입으로 빈 조회
         MemberService memberService = ac.getBean(MemberService.class);
         // 같은 인스턴스인지 검증
@@ -36,7 +36,7 @@ public class ApplicationContextBasicFindTest {
 
     @Test
     @DisplayName("구체 타입으로 조회")
-    void findBeanByName2() {
+    public void findBeanByName2() {
         // 구체 타입으로 빈 조회하기 => 구체적으로 적는것은 좋은 방식은 아님(구현에 의존하지 않고 역할에 의존해야함)
         MemberService memberService = ac.getBean("memberService", MemberServiceImpl.class);
         // 같은 인스턴스인지 검증
@@ -45,7 +45,7 @@ public class ApplicationContextBasicFindTest {
 
     @Test
     @DisplayName("빈 이름으로 조회 실패")
-    void findBeanByNameX() {
+    public void findBeanByNameX() {
         //MemberService memberService = ac.getBean("xxxx", MemberService.class);
         // Exception :  No bean named 'xxxx' available
 
