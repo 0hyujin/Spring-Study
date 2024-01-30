@@ -15,9 +15,11 @@ public class JpaMain {
         tx.begin();
 
         try {
+            // 비영속
 //            Member member = new Member();
 //            member.setId(1L);
 //            member.setName("HelloB");
+            // 영속
 //            em.persist(member);
 
             List<Member> result = em.createQuery("select m from Memeber as m", Member.class)
