@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a35ba789-15f2-4cb7-9edd-1204b6800654" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ex1-hello-jpa/src/main/java/hellojpa/RoleType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex1-hello-jpa/src/main/java/hellojpa/JpaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/ex1-hello-jpa/src/main/java/hellojpa/JpaMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ex1-hello-jpa/src/main/java/hellojpa/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/ex1-hello-jpa/src/main/java/hellojpa/Member.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +19,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -48,6 +51,11 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="hellojpa" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="JpaMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="hellojpa.JpaMain" />
