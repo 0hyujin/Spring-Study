@@ -23,7 +23,7 @@ public class JpaMain {
 
             tx.commit();
         } catch (Exception e) {
-            // tx.rollback();
+            tx.rollback();
         } finally {
             em.close();
         }
