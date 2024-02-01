@@ -16,7 +16,6 @@ public class JpaMain {
         tx.begin();
 
         try {
-
             //팀 저장
             Team team = new Team();
             team.setName("TeamA");
@@ -25,19 +24,19 @@ public class JpaMain {
             //회원 저장
             Member member = new Member();
             member.setUsername("member1");
-            member.setTeam(team); //단방향 연관관계 설정, 참조 저장
             em.persist(member);
+
+            team.addMember(member);
 
             em.flush();
             em.clear();
 
-            //조회
-            Member findMember = em.find(Member.class, member.getId());
-            List<Member> members = findMember.getTeam().getMembers();
+            Team findTeam = em.find(Team.class, team.getId());
+            List<Member> members = findTeam.getMembers();
 
-            for (Member m : members) {
-                System.out.println("m.getUsername() = " + m.getUsername());
-            }
+            System.out.println("===============");
+            System.out.println("findTeam = " + findTeam);
+            System.out.println("===============");
 
             tx.commit();
         } catch (Exception e) {
