@@ -33,10 +33,11 @@ public class JpaMain {
 
             //조회
             Member findMember = em.find(Member.class, member.getId());
+            List<Member> members = findMember.getTeam().getMembers();
 
-            //연관관계가 없음
-            Team findTeam = em.find(Team.class, team.getId());
-            System.out.println("findTeam.getName() = " + findTeam.getName());
+            for (Member m : members) {
+                System.out.println("m.getUsername() = " + m.getUsername());
+            }
 
             tx.commit();
         } catch (Exception e) {
