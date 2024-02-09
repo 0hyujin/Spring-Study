@@ -3,11 +3,12 @@ package hellojpa;
 import jakarta.persistence.*;
 
 
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.concurrent.locks.Lock;
 
 @Entity
-public class Member extends BaseEntity {
+public class Member{
 
     @Id
     @GeneratedValue
@@ -17,9 +18,14 @@ public class Member extends BaseEntity {
     @Column(name = "USERNAME")
     private String username;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn
-    private Team team;
+    // 기간 Period
+    @Embedded
+    private Period workperiod;
+
+    // 주소
+    @Embedded
+    private Address homeaddress;
+
 
     public Long getId() {
         return id;
@@ -37,12 +43,19 @@ public class Member extends BaseEntity {
         this.username = username;
     }
 
-    public Team getTeam() {
-        return team;
+    public Period getWorkperiod() {
+        return workperiod;
     }
 
-    public void setTeam(Team team) {
-        this.team = team;
+    public void setWorkperiod(Period workperiod) {
+        this.workperiod = workperiod;
     }
 
+    public Address getHomeaddress() {
+        return homeaddress;
+    }
+
+    public void setHomeaddress(Address homeaddress) {
+        this.homeaddress = homeaddress;
+    }
 }
